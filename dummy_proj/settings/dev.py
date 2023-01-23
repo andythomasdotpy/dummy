@@ -8,7 +8,4 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "127.0.0.1",
-    "anpythomas.com",
-    "www.anpythomas.com",
-    "dummy-env.eba-nwpabs5q.us-west-2.elasticbeanstalk.com",
 ]
