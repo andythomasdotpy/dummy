@@ -1,4 +1,4 @@
-from decouple import config
+from decouple import config, Csv
 
 from .base import *
 
@@ -8,10 +8,7 @@ SECRET_KEY = config("SECRET_KEY")
 
 DEBUG = config("DEBUG", cast=bool)
 
-ALLOWED_HOSTS = [
-    "anpythomas.com",
-    "www.anpythomas.com",
-]
+ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=Csv())
 
 # HTTPS settings
 SESSION_COOKIE_SECURE = True
