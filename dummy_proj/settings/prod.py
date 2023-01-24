@@ -6,7 +6,7 @@ print("prod")
 
 SECRET_KEY = config("SECRET_KEY")
 
-DEBUG = False
+DEBUG = config("DEBUG", cast=bool)
 
 ALLOWED_HOSTS = [
     "anpythomas.com",

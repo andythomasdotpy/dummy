@@ -1,10 +1,6 @@
-import os
 from decouple import config
 
 
-# SETTINGS_PROD = "prod"
-
-# os.environ.get('TWITTER_ACCESS_TOKEN')
 try:
     print(f"printing **before** {config('SETTINGS_PATH')}")
 
