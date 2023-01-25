@@ -11,6 +11,3 @@ except:
     print("SETTINGS_PATH not equal to prod..")
     print("dev.py settings activated!")
     from .dev import *
-
-
-
